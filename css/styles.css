@@ -1,4 +1,143 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100dvh;
+  background-image: url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.hero-description {
+  display: flex;
+  width: 30%;
+}
+
+.hero-description > p {
+  margin-top: 5rem;
+  color: #ffffff;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+}
+
+.hero-description > p > span {
+  font-weight: 300;
+}
+
+.hero-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero-name > h1 {
+  font-size: 7rem;
+  color: #ffffff5e;
+  margin: 0;
+}
+
+.navbar {
+  color: #ffffff;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-left: 30rem;
+}
+
+.navbar > a {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.761);
+  text-decoration: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #000029;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.about-container > h2 {
+  color: #ffffff5e;
+  display: flex;
+  width: 100%;
+  border-bottom: 4px solid #ffffff5e;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.about-container > p {
+  display: flex;
+  width: 60%;
+  align-self: flex-end;
+  color: #ffffffa1;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #000029;
+  min-height: 100dvh;
+  align-items: center;
+}
+
+.projects-container > h2 {
+  color: #ffffff5e;
+  display: flex;
+  width: 100%;
+  border-bottom: 4px solid #ffffff5e;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+}
