@@ -288,16 +288,45 @@ body {
   border-radius: 4px;
 }
 
+.mobile-img {
+  display: none;
+}
+
 .tech-stack {
   width: 100%;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  margin-bottom: 1rem;
   justify-content: flex-end;
   padding-right: 1rem;
 }
 
+.read-more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 200ms ease-in-out;
+}
+
+.read-more.active {
+  grid-template-rows: 1fr;
+  padding-bottom: 1rem;
+}
+
+.read-more > div {
+  overflow: hidden;
+}
+
+.read-more > div > h4 {
+  font-weight: 400;
+  color: rgb(225, 154, 154);
+}
+
+.read-more > div > p {
+  font-weight: 100;
+}
+
 .stack-badge {
+  align-self: flex-end;
   color: #080c0f;
   font-size: 0.6rem;
   padding: 0 0.3rem;
@@ -384,19 +413,25 @@ body {
 
   .nav-links {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin: 0 0.2rem;
     justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links > a {
+    width: 115px;
+    display: flex;
+    justify-content: center;
     padding: 0.2rem 0.5rem;
     text-decoration: none;
     font-weight: 300;
     color: #090d10;
     letter-spacing: 2px;
+    border: 1px solid #090d1043;
     background-color: rgb(225, 154, 154);
-    border-radius: 2px;
+    border-radius: 4px;
     transition: 200ms ease-in-out;
   }
 
@@ -418,10 +453,12 @@ body {
     color: #ffffff5e;
     letter-spacing: 2px;
     line-height: 25px;
+    width: 100%;
   }
 
   .about-container {
     padding: 1rem;
+    width: 100%;
   }
 
   .about-container > h2 {
@@ -460,6 +497,7 @@ body {
 
   .projects-container {
     max-width: 100dvw;
+    align-items: center;
     padding: 1rem;
   }
 
@@ -494,5 +532,13 @@ body {
 
   .contact-container > h2 {
     font-size: 4rem;
+  }
+
+  .mobile-img {
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    border: 1px solid rgb(225, 154, 154);
+    border-radius: 4px;
   }
 }
