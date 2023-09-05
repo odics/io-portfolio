@@ -181,6 +181,10 @@ body {
   color: #a9abaa80;
 }
 
+.rotate-up {
+  transform: rotateX(180deg);
+}
+
 .about-container > h2 {
   max-width: fit-content;
   margin: 0;
@@ -334,6 +338,14 @@ body {
   background-color: rgb(225, 154, 154);
 }
 
+.stack-badge:hover {
+  cursor: pointer;
+}
+
+.stack-badge > i {
+  transition: 300ms ease-in-out;
+}
+
 .contact {
   min-height: 100dvh;
   background-color: #080c0f;
@@ -430,7 +442,7 @@ body {
     color: #090d10;
     letter-spacing: 2px;
     border: 1px solid #090d1043;
-    background-color: rgb(225, 154, 154);
+    background-color: rgba(225, 154, 154, 0.387);
     border-radius: 4px;
     transition: 200ms ease-in-out;
   }
