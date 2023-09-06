@@ -1,4 +1,5 @@
 const dropdownButtons = document.querySelectorAll(".dropdown-button");
+const projectImages = document.querySelectorAll(".img-one");
 
 dropdownButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -10,6 +11,23 @@ dropdownButtons.forEach((button) => {
     contentBox.classList.toggle("active");
   });
 });
+
+const modalOverlay = document.querySelector(".modal-overlay");
+const modal = document.querySelector(".img-modal");
+
+projectImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    modalOverlay.classList.toggle("display-modal");
+    modal.classList.toggle("display-modal");
+  });
+});
+
+const modalCloseButton = document
+  .querySelector(".modal-close-button")
+  .addEventListener("click", () => {
+    modalOverlay.classList.toggle("display-modal");
+    modal.classList.toggle("display-modal");
+  });
 
 function isCardInViewport(element) {
   const rect = element.getBoundingClientRect();
