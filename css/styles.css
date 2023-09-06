@@ -331,9 +331,27 @@ body {
   position: absolute;
   left: -5rem;
   top: -5rem;
+  cursor: pointer;
+}
+
+.project-img {
+  width: 300px;
+  height: auto;
   border: 1px solid rgb(225, 154, 154);
   border-radius: 4px;
-  cursor: pointer;
+}
+
+.img-enlarge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 154, 154, 0.572);
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #080c0f;
 }
 
 .mobile-img {
