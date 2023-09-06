@@ -44,7 +44,7 @@ body {
   padding: 0.2rem 0.5rem;
   text-decoration: none;
   font-weight: 300;
-  color: #a9abaa80;
+  color: rgba(169, 171, 170, 0.5);
   letter-spacing: 2px;
   border: 1px solid rgb(225, 154, 154);
   border-radius: 2px;
@@ -71,7 +71,7 @@ body {
 .letter-o {
   width: 200px;
   height: 200px;
-  background-color: #080c0f;
+  background-color: rgb(8, 12, 15);
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -115,7 +115,7 @@ body {
 }
 
 .nav-wrapper > h3 {
-  color: #a9abaa80;
+  color: rgba(169, 171, 170, 0.5);
   font-weight: 300;
 }
 
@@ -132,13 +132,13 @@ body {
 
 .hero-name > h1 {
   font-size: 7rem;
-  color: #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
   margin: 0;
 }
 
 .about {
   min-height: 100dvh;
-  background-color: #080c0f;
+  background-color: rgb(8, 12, 15);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -154,7 +154,7 @@ body {
 
 .about-text {
   width: 31rem;
-  color: #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
   letter-spacing: 2px;
   line-height: 25px;
   text-align: justify;
@@ -171,7 +171,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid #ffffff5e;
+  border: 1px solid rgba(255, 255, 255, 0.37);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,7 +196,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid #ffffff5e;
+  border: 1px solid rgba(255, 255, 255, 0.37);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +212,7 @@ body {
 .down-arrow,
 .up-arrow {
   text-decoration: none;
-  color: #a9abaa80;
+  color: rgba(169, 171, 170, 0.5);
 }
 
 .rotate-up {
@@ -224,8 +224,8 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: #ffffff5e;
-  border-bottom: 1px solid #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.37);
   margin-bottom: 1rem;
 }
 
@@ -235,7 +235,7 @@ body {
 
 .projects {
   min-height: 100dvh;
-  background-color: #080c0f;
+  background-color: rgba(8, 12, 15, 1);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -249,7 +249,7 @@ body {
 }
 
 .projects-list {
-  color: #ffffffdb;
+  color: rgba(255, 255, 255, 0.86);
   font-weight: 100;
   letter-spacing: 2px;
   line-height: 25px;
@@ -262,14 +262,14 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
   margin-bottom: 3rem;
 }
 
 .project-card {
   display: flex;
   width: 45rem;
-  border: 1px solid #ffffff5e;
+  border: 1px solid rgba(255, 255, 255, 0.37);
   border-radius: 2px;
   margin-top: 5rem;
   transform: translateY(6rem);
@@ -297,7 +297,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-size: 0.7rem;
-  color: #a9abaab4;
+  color: rgba(169, 171, 170, 0.71);
   letter-spacing: 2px;
   border: 1px solid rgb(225, 154, 154);
   border-radius: 2px;
@@ -310,7 +310,7 @@ body {
 
 .project-pictures > a:hover {
   background-color: rgb(225, 154, 154);
-  color: #080c0f;
+  color: rgba(8, 12, 15, 1);
 }
 
 .project-description {
@@ -351,7 +351,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #080c0f;
+  color: rgba(8, 12, 15, 1);
 }
 
 .mobile-img {
@@ -384,7 +384,7 @@ body {
 
 .read-more > div > h4 {
   font-weight: 400;
-  color: rgb(225, 154, 154);
+  color: rgba(225, 154, 154, 1);
 }
 
 .read-more > div > p {
@@ -393,7 +393,7 @@ body {
 
 .stack-badge {
   align-self: flex-end;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   font-size: 0.6rem;
   font-weight: 300;
   padding: 0 0.3rem;
@@ -411,7 +411,7 @@ body {
 
 .contact {
   min-height: 100dvh;
-  background-color: #080c0f;
+  background-color: rgba(8, 12, 15, 1);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -430,8 +430,8 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: #ffffff5e;
-  border-bottom: 1px solid #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.37);
   margin-bottom: 1rem;
 }
 
@@ -443,12 +443,12 @@ body {
 
 .contact-icons > a {
   font-size: 8rem;
-  color: #ffffff5e;
+  color: rgba(255, 255, 255, 0.37);
   transition: 200ms ease-in-out;
 }
 
 .contact-icons > a:hover {
-  color: rgb(225, 154, 154);
+  color: rgba(225, 154, 154, 1);
 }
 
 .modal-overlay {
@@ -520,7 +520,7 @@ body {
 
   .mobile-h2 {
     display: flex;
-    color: #ffffff5e;
+    color: rgba(255, 255, 255, 0.37);
   }
 
   .letter-o {
@@ -553,9 +553,9 @@ body {
     padding: 0.2rem 0.5rem;
     text-decoration: none;
     font-weight: 300;
-    color: #090d10;
+    color: rgba(9, 13, 16, 1);
     letter-spacing: 2px;
-    border: 1px solid #090d1043;
+    border: 1px solid rgba(9, 13, 16, 0.26);
     background-color: rgba(225, 154, 154, 0.387);
     border-radius: 4px;
     transition: 200ms ease-in-out;
@@ -566,7 +566,7 @@ body {
     text-decoration: none;
     font-weight: 300;
     font-size: 0.6rem;
-    color: #090d10;
+    color: rgba(9, 13, 16, 1);
     letter-spacing: 2px;
     background-color: rgb(225, 154, 154);
     border-radius: 2px;
@@ -577,7 +577,7 @@ body {
   }
 
   .about-text {
-    color: #ffffff5e;
+    color: rgba(255, 255, 255, 0.37);
     letter-spacing: 2px;
     line-height: 25px;
     width: 100%;
@@ -592,8 +592,8 @@ body {
     margin: 0;
     font-size: 4rem;
     font-weight: 100;
-    color: #ffffff5e;
-    border-bottom: 1px solid #ffffff5e;
+    color: rgba(255, 255, 255, 0.37);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
     margin-bottom: 1rem;
   }
 
@@ -601,7 +601,7 @@ body {
     margin: 0;
     font-size: 4rem;
     font-weight: 100;
-    color: #ffffff5e;
+    color: rgba(255, 255, 255, 0.37);
     margin-bottom: 1rem;
   }
 
@@ -612,7 +612,7 @@ body {
   .project-card {
     display: flex;
     width: 100%;
-    border: 1px solid #ffffff5e;
+    border: 1px solid rgba(255, 255, 255, 0.37);
     border-radius: 2px;
     margin-top: 1rem;
     padding-left: 1rem;
@@ -631,7 +631,7 @@ body {
   }
 
   .projects-list {
-    color: #ffffff5e;
+    color: rgba(255, 255, 255, 0.37);
     letter-spacing: 2px;
     line-height: 25px;
     display: flex;
@@ -667,7 +667,7 @@ body {
     width: 100%;
     display: block;
     margin-top: 2rem;
-    border: 1px solid rgb(225, 154, 154);
+    border: 1px solid rgba(225, 154, 154, 1);
     border-radius: 4px;
   }
 }
