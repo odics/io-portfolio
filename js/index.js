@@ -12,7 +12,7 @@ dropdownButtons.forEach((button) => {
   });
 });
 
-function isInViewport(element) {
+function isCardInViewport(element) {
   const rect = element.getBoundingClientRect();
   const height = window.innerHeight || document.documentElement.clientHeight;
   const width = window.innerWidth || document.documentElement.clientWidth;
@@ -31,7 +31,7 @@ document.addEventListener(
   "scroll",
   () => {
     projectCard.forEach((card) => {
-      if (isInViewport(card)) {
+      if (isCardInViewport(card)) {
         card.classList.add("fade-in");
       }
     });
