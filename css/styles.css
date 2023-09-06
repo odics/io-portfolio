@@ -52,8 +52,8 @@ body {
 }
 
 .nav-links > a:hover {
-  background-color: rgb(225, 154, 154);
-  color: #080c0f;
+  background-color: rgba(225, 154, 154, 1);
+  color: rgba(8, 12, 15, 1);
 }
 
 .text-container {
@@ -64,14 +64,14 @@ body {
 .text-container > h1 {
   font-size: 16rem;
   font-weight: 100;
-  color: #080c0f;
+  color: rgba(8, 12, 15, 1);
   margin: 0;
 }
 
 .letter-o {
   width: 200px;
   height: 200px;
-  background-color: rgb(8, 12, 15);
+  background-color: rgba(8, 12, 15, 1);
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -81,7 +81,7 @@ body {
 .inner-o {
   width: 189px;
   height: 189px;
-  background-color: rgb(225, 154, 154);
+  background-color: rgba(225, 154, 154, 1);
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -120,7 +120,7 @@ body {
 }
 
 .nav-wrapper > h3 > span {
-  color: rgb(227, 125, 125);
+  color: rgba(227, 125, 125, 1);
   font-weight: 300;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .about {
   min-height: 100dvh;
-  background-color: rgb(8, 12, 15);
+  background-color: rgba(8, 12, 15, 1);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -631,7 +631,7 @@ body {
   }
 
   .projects-list {
-    color: rgba(255, 255, 255, 0.37);
+    color: rgba(255, 255, 255, 0.86);
     letter-spacing: 2px;
     line-height: 25px;
     display: flex;
