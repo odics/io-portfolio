@@ -1,5 +1,4 @@
 const dropdownButtons = document.querySelectorAll(".dropdown-button");
-console.log(dropdownButtons);
 
 dropdownButtons.forEach((button) => {
   button.addEventListener("click", () => {
