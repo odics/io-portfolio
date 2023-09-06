@@ -1,18 +1,42 @@
-const readMore = document.getElementById("readmore");
-const readMore2 = document.getElementById("readmore2");
+const dropdownButtons = document.querySelectorAll(".dropdown-button");
+console.log(dropdownButtons);
 
-const arrow1 = document.getElementById("arrow1");
-const arrow2 = document.getElementById("arrow2");
+dropdownButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const contentID = button.getAttribute("data-target");
+    const contentBox = document.getElementById(contentID);
 
-const moreContainer = document.getElementById("more-text");
-const moreContainer2 = document.getElementById("more-text2");
+    button.querySelectorAll("i")[0].classList.toggle("rotate-up");
 
-readMore.addEventListener("click", () => {
-  moreContainer.classList.toggle("active");
-  arrow1.classList.toggle("rotate-up");
+    contentBox.classList.toggle("active");
+  });
 });
 
-readMore2.addEventListener("click", () => {
-  moreContainer2.classList.toggle("active");
-  arrow2.classList.toggle("rotate-up");
-});
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  const height = window.innerHeight || document.documentElement.clientHeight;
+  const width = window.innerWidth || document.documentElement.clientWidth;
+  const offset = { left: 0, right: 0, top: 0, bottom: 0 };
+  return (
+    rect.right >= -offset.left &&
+    rect.bottom >= -offset.top &&
+    rect.left <= width + offset.right &&
+    rect.top <= height + offset.bottom
+  );
+}
+
+const projectCard = document.querySelectorAll(".project-card");
+
+document.addEventListener(
+  "scroll",
+  function () {
+    projectCard.forEach((card) => {
+      if (isInViewport(card)) {
+        card.classList.add("fade-in");
+      }
+    });
+  },
+  {
+    passive: true,
+  }
+);
