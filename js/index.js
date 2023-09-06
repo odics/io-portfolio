@@ -6,7 +6,7 @@ dropdownButtons.forEach((button) => {
     const contentID = button.getAttribute("data-target");
     const contentBox = document.getElementById(contentID);
 
-    button.querySelectorAll("i")[0].classList.toggle("rotate-up");
+    button.querySelector("i").classList.toggle("rotate-up");
 
     contentBox.classList.toggle("active");
   });
@@ -29,7 +29,7 @@ const projectCard = document.querySelectorAll(".project-card");
 
 document.addEventListener(
   "scroll",
-  function () {
+  () => {
     projectCard.forEach((card) => {
       if (isInViewport(card)) {
         card.classList.add("fade-in");
