@@ -5,6 +5,30 @@
 }
 
 html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -29,7 +53,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100dvh;
-  background-image: url("/images/hero-mtns.jpg");
+  background-image: url("/hero-mtns.jpg");
   background-size: cover;
   background-position: 0% 43%;
 }
@@ -272,9 +296,6 @@ body {
   border: 1px solid #ffffff5e;
   border-radius: 2px;
   margin-top: 5rem;
-  transform: translateY(6rem);
-  transition: 500ms ease-in-out;
-  opacity: 0;
 }
 
 .project-card.fade-in {
