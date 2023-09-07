@@ -1,3 +1,12 @@
+:root {
+  --brand: rgba(225, 154, 154, 1);
+  --light-gray: rgba(255, 255, 255, 0.37);
+  --links-gray: rgba(169, 171, 170, 0.5);
+  --dark-gray: rgba(8, 12, 15, 1);
+  --project-text: rgba(255, 255, 255, 0.86);
+  --modal-overlay: rgba(74, 74, 74, 0.664);
+}
+
 *,
 *::before,
 *::after {
@@ -44,16 +53,16 @@ body {
   padding: 0.2rem 0.5rem;
   text-decoration: none;
   font-weight: 300;
-  color: rgba(169, 171, 170, 0.5);
+  color: var(--links-gray);
   letter-spacing: 2px;
-  border: 1px solid rgb(225, 154, 154);
+  border: 1px solid var(--brand);
   border-radius: 2px;
   transition: 200ms ease-in-out;
 }
 
 .nav-links > a:hover {
-  background-color: rgba(225, 154, 154, 1);
-  color: rgba(8, 12, 15, 1);
+  background-color: var(--brand);
+  color: var(--dark-gray);
 }
 
 .text-container {
@@ -64,14 +73,14 @@ body {
 .text-container > h1 {
   font-size: 16rem;
   font-weight: 100;
-  color: rgba(8, 12, 15, 1);
+  color: var(--dark-gray);
   margin: 0;
 }
 
 .letter-o {
   width: 200px;
   height: 200px;
-  background-color: rgba(8, 12, 15, 1);
+  background-color: var(--dark-gray);
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -81,7 +90,7 @@ body {
 .inner-o {
   width: 189px;
   height: 189px;
-  background-color: rgba(225, 154, 154, 1);
+  background-color: var(--brand);
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -115,12 +124,12 @@ body {
 }
 
 .nav-wrapper > h3 {
-  color: rgba(169, 171, 170, 0.5);
+  color: var(--links-gray);
   font-weight: 300;
 }
 
 .nav-wrapper > h3 > span {
-  color: rgba(227, 125, 125, 1);
+  color: var(--brand);
   font-weight: 300;
 }
 
@@ -132,13 +141,13 @@ body {
 
 .hero-name > h1 {
   font-size: 7rem;
-  color: rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
   margin: 0;
 }
 
 .about {
   min-height: 100dvh;
-  background-color: rgba(8, 12, 15, 1);
+  background-color: var(--dark-gray);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -154,7 +163,7 @@ body {
 
 .about-text {
   width: 31rem;
-  color: rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
   letter-spacing: 2px;
   line-height: 25px;
   text-align: justify;
@@ -171,7 +180,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.37);
+  border: 1px solid var(--light-gray);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,8 +188,7 @@ body {
 }
 
 .up-arrow > i:hover {
-  background-color: rgb(225, 154, 154);
-  border: 1px solid rgb(225, 154, 154);
+  background-color: var(--brand);
   color: black;
 }
 
@@ -196,7 +204,7 @@ body {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.37);
+  border: 1px solid var(--light-gray);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,15 +212,14 @@ body {
 }
 
 .down-arrow > i:hover {
-  background-color: rgb(225, 154, 154);
-  border: 1px solid rgb(225, 154, 154);
-  color: black;
+  background-color: var(--brand);
+  color: var(--dark-gray);
 }
 
 .down-arrow,
 .up-arrow {
   text-decoration: none;
-  color: rgba(169, 171, 170, 0.5);
+  color: var(--links-gray);
 }
 
 .rotate-up {
@@ -224,8 +231,8 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.37);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
   margin-bottom: 1rem;
 }
 
@@ -235,7 +242,7 @@ body {
 
 .projects {
   min-height: 100dvh;
-  background-color: rgba(8, 12, 15, 1);
+  background-color: var(--dark-gray);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -249,7 +256,7 @@ body {
 }
 
 .projects-list {
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--project-text);
   font-weight: 100;
   letter-spacing: 2px;
   line-height: 25px;
@@ -262,14 +269,14 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
   margin-bottom: 3rem;
 }
 
 .project-card {
   display: flex;
   width: 45rem;
-  border: 1px solid rgba(255, 255, 255, 0.37);
+  border: 1px solid var(--light-gray);
   border-radius: 2px;
   margin-top: 5rem;
   transform: translateY(6rem);
@@ -297,9 +304,9 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-size: 0.7rem;
-  color: rgba(169, 171, 170, 0.71);
+  color: var(--light-gray);
   letter-spacing: 2px;
-  border: 1px solid rgb(225, 154, 154);
+  border: 1px solid var(--brand);
   border-radius: 2px;
   transition: 200ms ease-in-out;
 }
@@ -309,8 +316,8 @@ body {
 }
 
 .project-pictures > a:hover {
-  background-color: rgb(225, 154, 154);
-  color: rgba(8, 12, 15, 1);
+  background-color: var(--brand);
+  color: var(--dark-gray);
 }
 
 .project-description {
@@ -320,7 +327,7 @@ body {
 .project-description > h3 {
   font-weight: 300;
   font-size: 2rem;
-  color: rgb(225, 154, 154);
+  color: var(--brand);
   margin: 0;
   margin-top: 1rem;
 }
@@ -337,7 +344,7 @@ body {
 .project-img {
   width: 300px;
   height: auto;
-  border: 1px solid rgb(225, 154, 154);
+  border: 1px solid var(--brand);
   border-radius: 4px;
 }
 
@@ -345,13 +352,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(225, 154, 154, 0.572);
+  background-color: var(--brand);
   padding: 5px;
   border-radius: 50%;
   position: absolute;
   top: 10px;
   right: 10px;
-  color: rgba(8, 12, 15, 1);
+  color: var(--dark-gray);
 }
 
 .mobile-img {
@@ -384,7 +391,7 @@ body {
 
 .read-more > div > h4 {
   font-weight: 400;
-  color: rgba(225, 154, 154, 1);
+  color: var(--brand);
 }
 
 .read-more > div > p {
@@ -393,12 +400,12 @@ body {
 
 .stack-badge {
   align-self: flex-end;
-  color: rgba(0, 0, 0, 1);
+  color: var(--dark-gray);
   font-size: 0.6rem;
   font-weight: 300;
   padding: 0 0.3rem;
   border-radius: 2px;
-  background-color: rgb(225, 154, 154);
+  background-color: var(--brand);
 }
 
 .stack-badge:hover {
@@ -411,7 +418,7 @@ body {
 
 .contact {
   min-height: 100dvh;
-  background-color: rgba(8, 12, 15, 1);
+  background-color: var(--dark-gray);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -430,8 +437,8 @@ body {
   margin: 0;
   font-size: 9.2rem;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.37);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
   margin-bottom: 1rem;
 }
 
@@ -443,12 +450,12 @@ body {
 
 .contact-icons > a {
   font-size: 8rem;
-  color: rgba(255, 255, 255, 0.37);
+  color: var(--light-gray);
   transition: 200ms ease-in-out;
 }
 
 .contact-icons > a:hover {
-  color: rgba(225, 154, 154, 1);
+  color: var(--brand);
 }
 
 .modal-overlay {
@@ -458,7 +465,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(74, 74, 74, 0.664);
+  background-color: var(--modal-overlay);
   transition: 300ms ease-in-out;
   pointer-events: none;
 }
@@ -496,7 +503,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgb(225, 154, 154);
+  background-color: var(--brand);
   cursor: pointer;
 }
 
@@ -520,7 +527,7 @@ body {
 
   .mobile-h2 {
     display: flex;
-    color: rgba(255, 255, 255, 0.37);
+    color: var(--light-gray);
   }
 
   .letter-o {
@@ -553,7 +560,7 @@ body {
     padding: 0.2rem 0.5rem;
     text-decoration: none;
     font-weight: 300;
-    color: rgba(9, 13, 16, 1);
+    color: var(--dark-gray);
     letter-spacing: 2px;
     border: 1px solid rgba(9, 13, 16, 0.26);
     background-color: rgba(225, 154, 154, 0.387);
@@ -566,9 +573,9 @@ body {
     text-decoration: none;
     font-weight: 300;
     font-size: 0.6rem;
-    color: rgba(9, 13, 16, 1);
+    color: var(--dark-gray);
     letter-spacing: 2px;
-    background-color: rgb(225, 154, 154);
+    background-color: var(--brand);
     border-radius: 2px;
   }
 
@@ -577,7 +584,7 @@ body {
   }
 
   .about-text {
-    color: rgba(255, 255, 255, 0.37);
+    color: var(--light-gray);
     letter-spacing: 2px;
     line-height: 25px;
     width: 100%;
@@ -592,8 +599,8 @@ body {
     margin: 0;
     font-size: 4rem;
     font-weight: 100;
-    color: rgba(255, 255, 255, 0.37);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    color: var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
     margin-bottom: 1rem;
   }
 
@@ -601,7 +608,7 @@ body {
     margin: 0;
     font-size: 4rem;
     font-weight: 100;
-    color: rgba(255, 255, 255, 0.37);
+    color: var(--light-gray);
     margin-bottom: 1rem;
   }
 
@@ -612,7 +619,7 @@ body {
   .project-card {
     display: flex;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.37);
+    border: 1px solid var(--light-gray);
     border-radius: 2px;
     margin-top: 1rem;
     padding-left: 1rem;
@@ -631,7 +638,7 @@ body {
   }
 
   .projects-list {
-    color: rgba(255, 255, 255, 0.86);
+    color: var(--project-text);
     letter-spacing: 2px;
     line-height: 25px;
     display: flex;
@@ -667,7 +674,7 @@ body {
     width: 100%;
     display: block;
     margin-top: 2rem;
-    border: 1px solid rgba(225, 154, 154, 1);
+    border: 1px solid var(--brand);
     border-radius: 4px;
   }
 }
