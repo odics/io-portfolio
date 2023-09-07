@@ -574,6 +574,14 @@ body {
   .mobile-h2 {
     display: flex;
     color: var(--light-gray);
+    transform: translateX(20rem);
+    opacity: 0;
+    transition: 600ms ease-in-out;
+  }
+
+  .mobile-h2.animate {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .letter-o {

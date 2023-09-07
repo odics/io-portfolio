@@ -66,6 +66,9 @@ const animateFirstName = () => {
 const animateLastName = () => {
   const lastName = document.querySelector(".text-container");
   lastName.classList.add("animate");
+
+  const mobileLastName = document.querySelector(".mobile-h2");
+  mobileLastName.classList.add("animate");
 };
 
 const animateTagLine = () => {
