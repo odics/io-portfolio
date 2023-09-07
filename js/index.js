@@ -57,3 +57,43 @@ document.addEventListener(
     passive: true,
   }
 );
+
+const animateFirstName = () => {
+  const firstName = document.querySelector(".first-name-initial");
+  firstName.classList.add("animate");
+};
+
+const animateLastName = () => {
+  const lastName = document.querySelector(".text-container");
+  lastName.classList.add("animate");
+};
+
+const animateTagLine = () => {
+  const tagLine = document.querySelector(".tagline");
+  tagLine.classList.add("animate");
+};
+
+const animateAbout = () => {
+  const about = document.querySelector("#aboutLink").classList.add("animate");
+};
+
+const animateProjects = () => {
+  const projects = document
+    .querySelector("#projectsLink")
+    .classList.add("animate");
+};
+
+const animateContact = () => {
+  const contact = document
+    .querySelector("#contactLink")
+    .classList.add("animate");
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const firstNameDelay = setTimeout(animateFirstName, 1000);
+  const lastNameDelay = setTimeout(animateLastName, 2000);
+  const tagLineDelay = setTimeout(animateTagLine, 3000);
+  const aboutDelay = setTimeout(animateAbout, 4000);
+  const projectsDelay = setTimeout(animateProjects, 4300);
+  const contactDelay = setTimeout(animateContact, 4600);
+});
