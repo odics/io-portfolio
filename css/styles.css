@@ -49,7 +49,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100dvh;
-  background-image: url("/images/hero-mtns.jpg");
+  background-image: url("../images/hero-mtns.jpg");
   background-size: cover;
   background-position: 0% 43%;
 }
