@@ -359,12 +359,13 @@ body {
   position: absolute;
   top: -8px;
   right: -8px;
-  color: var(--project-text);
+  color: var(--brand);
   transition: 200ms ease-in-out;
 }
 
 .img-enlarge:hover {
   background-color: var(--brand);
+  color: var(--project-text);
 }
 
 .mobile-img {
