@@ -17,6 +17,8 @@ const modal = document.querySelector(".img-modal");
 
 projectImages.forEach((image) => {
   image.addEventListener("click", () => {
+    const imgSource = image.getAttribute("data-img");
+    modal.childNodes[1].setAttribute("src", imgSource);
     modalOverlay.classList.toggle("display-modal");
     modal.classList.toggle("display-modal");
   });
